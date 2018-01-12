@@ -1,0 +1,73 @@
+body{
+  padding:0;
+  margin:0;
+/*   background-image:url("http://photo.foter.com/photos/395/close-up-of-black-computer-keyboard.jpg"); */
+  background-repeat:no-repeat;
+  background-size:cover;
+  background:#2DAF94;
+}
+.wrapper{
+  postion:relative;
+  overflow:hidden;
+  
+}
+
+.wrapper .modal{
+  justify-content:center;
+  flex-direction:columns;
+  text-align:center;
+  align-items:center;
+  position:absolute;
+  
+  background:rgba(20, 16, 16, 0.85);
+  min-width:100%;
+  min-height:100%;
+  padding-right:20px;
+  padding-left:20px;
+  padding-top:20px;
+  left:0;
+  right:0;
+  display:none;
+  z-index:1;
+  padding:40px 0;
+  
+ 
+ 
+ 
+}
+.wrapper .modal-content{
+  width:80%;
+  display:block;
+  max-width:700px;
+  margin:auto;
+  animation:zoom 1s ;
+}
+@keyframes zoom{
+  from{
+     transform:scale(0);
+/*      transform:translateY(-400px) */
+  }
+  to{
+/*      transform:translateY(0) */
+   transform:scale(1); 
+  }
+}
+.wrapper .wrapper-content img{
+
+ 
+    max-width:400px;
+  max-height:300px;
+  border:2px solid #ccc;
+  border-radius:6px;
+}
+.wrapper .wrapper-content{
+    justify-content:center;
+  flex-direction:columns;
+  text-align:center;
+  align-items:center;
+  padding:20px;
+}
+.wrapper .wrapper-content h3{
+  color:#fff;
+  font-family:"Roboto";
+}
